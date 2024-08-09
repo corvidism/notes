@@ -1,6 +1,11 @@
 ---
 title: Anna's notes
-description: You don't need Medium.com when you know HTML
+subtitle: You don't need Medium.com when you know HTML
+template: home
 ---
-My main page
+
+## Notes
+
+* [Semantic commas](/semantic-commas) - how to make copying inline tag lists less ugly
+
 

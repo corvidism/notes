@@ -12,15 +12,17 @@ Thus: this bullshit.
 So far it has:
 
 * Dynamic generation of pages from `*.md` files at compile-time (`glob`, `markdown-it` and a *lot* of `path.join`). 
-* HTML templates built on `ejs`. (I hate ejs and I hate most templating engines. I really wanted something jsx/component-like, but I couldn't find anything that would work. Shout out to [nakedJSX](https://nakedjsx.org) to being *so damn close*!)
+* HTML templates built on `nunjucks`. (Templating engines make me suffer. I really wanted something jsx/component-like, but I couldn't find anything that would work. Shout out to [nakedJSX](https://nakedjsx.org) to being *so damn close*.)
 * Frontmatter parsing via `gray-matter` (lovely, aside from me installing `grey-matter` first and losing time and brain cells trying to debug import errors).
 * `static` folder.
+* Way to serve the result (`serve`).
 
 Plans:
 * Make it not look like a turd.
 * Generate RSS.
 * GitHub Action to deploy to my VPS. (Conveniently I've already made one for a different project. Reduce-reuse-recycle, baby!)
-* Serve + watch files for change + rebuild. (I thought this would be easy. There has to be a library for that, right? Lol.)
+* Watch files for change + rebuild (+ restart browser maybe). Haven't found the right lib yet, although I'm pretty sure there's *something*. [`livereload`](https://www.npmjs.com/package/livereload), maybe? `chokidar`? I don't wanna write & run a server, but I'm getting the feeling that it won't work unless I have something of that shape. 
+* Syntax highlighting, since the only existing note already has code. (pure CSS is a must. [`ft-syntax-highlight`](https://github.com/soulshined/ft-syntax-highlight) looks good...)
 
 
 

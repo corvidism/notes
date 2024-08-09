@@ -12,12 +12,13 @@ export function getData() {
     const pages = pageFiles.map(md => {
         const fullpath = md.fullpath();
         const { data, content } = matter.read(fullpath);
+        console.log(content);
         const relativeFilename = fullpath.replace(contentDir, '');
         const slug = relativeFilename.replace('.md','');
 
         return {
             slug,
-            title: data.title,
+            data,
             content: parser.render(content)
         }
     });

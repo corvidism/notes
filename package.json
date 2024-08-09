@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./build.mjs"
+    "build": "node ./build.mjs",
+    "start": "serve dist -p 3456",
+    "dev": "npm run build; npm run start"
   },
   "author": "",
   "license": "ISC",
@@ -13,9 +15,8 @@
     "glob": "^11.0.0",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.0",
-    "rss": "^1.2.2"
-  },
-  "dependencies": {
-    "ejs": "^3.1.10"
+    "nunjucks": "^3.2.4",
+    "rss": "^1.2.2",
+    "serve": "^14.2.3"
   }
 }
