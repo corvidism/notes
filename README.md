@@ -19,6 +19,7 @@ So far it has:
 Plans:
 * Make it not look like a turd.
 * Generate RSS.
+* GitHub Action to deploy to my VPS. (Conveniently I've already made one for a different project. Reduce-reuse-recycle, baby!)
 * Serve + watch files for change + rebuild. (I thought this would be easy. There has to be a library for that, right? Lol.)
 
 
