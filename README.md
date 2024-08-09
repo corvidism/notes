@@ -18,6 +18,7 @@ So far it has:
 * Way to serve the result (`serve`).
 
 Plans:
+* Generate pages as `page-slug/index.html` so it has nice urls. (Like Astro does it.)
 * Make it not look like a turd.
 * Generate RSS.
 * GitHub Action to deploy to my VPS. (Conveniently I've already made one for a different project. Reduce-reuse-recycle, baby!)

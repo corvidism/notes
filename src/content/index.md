@@ -6,6 +6,6 @@ template: home
 
 ## Notes
 
-* [Semantic commas](/semantic-commas) - how to make copying inline tag lists less ugly
+* [Semantic commas](/semantic-commas.html) - how to make copying inline tag lists less ugly
 
 
