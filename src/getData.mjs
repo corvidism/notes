@@ -1,10 +1,11 @@
 import { globSync } from 'glob';
 import markdownit from 'markdown-it';
+import prism from 'markdown-it-prism';
 import { default as matter } from 'gray-matter';
 import path from 'node:path';
 
 export function getData() {
-    const parser = markdownit({typographer: true});
+    const parser = markdownit({typographer: true}).use(prism);
 
     const contentDir = path.join(process.cwd(), './src/content');
     const pageFiles = globSync(path.join(contentDir, '**/*.md'), { withFileTypes: true });

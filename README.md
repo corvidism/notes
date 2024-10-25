@@ -16,14 +16,14 @@ So far it has:
 * Frontmatter parsing via `gray-matter` (lovely, aside from me installing `grey-matter` first and losing time and brain cells trying to debug import errors).
 * `static` folder.
 * Way to serve the result (`serve`).
+* Github action to automatically deploy (reused from other project! Love when that happens.)
+* Syntax highlighting using [Prism](https://prismjs.com/), with no cleint-side JS.
 
 Plans:
 * Generate pages as `page-slug/index.html` so it has nice urls. (Like Astro does it.)
 * Make it not look like a turd.
 * Generate RSS.
-* GitHub Action to deploy to my VPS. (Conveniently I've already made one for a different project. Reduce-reuse-recycle, baby!)
 * Watch files for change + rebuild (+ restart browser maybe). Haven't found the right lib yet, although I'm pretty sure there's *something*. [`livereload`](https://www.npmjs.com/package/livereload), maybe? `chokidar`? I don't wanna write & run a server, but I'm getting the feeling that it won't work unless I have something of that shape. 
-* Syntax highlighting, since the only existing note already has code. (pure CSS is a must. [`ft-syntax-highlight`](https://github.com/soulshined/ft-syntax-highlight) looks good...)
 
 
 

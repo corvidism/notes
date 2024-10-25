@@ -6,7 +6,7 @@ title: Semantic commas
 
 **Problem:** I come to a page with a styled inline list of items - tags, bookmarks, whatever - and I need to copy them. I do my `Ctr+C` and `Ctrl+V` and I get this:
 
-```
+```plaintext
 My tagSome other tagThis is not funActuallyI hate this 
 ```
 
@@ -19,7 +19,12 @@ But I still want to copy that stuff, dammit. And I sure as hell don't want this 
 Semantic commas to the rescue!
 
 ```html
-<p><strong>Tags!</strong><span class="tag">My tag</span><span class="comma">, </span><span class="tag">Some other tag</span><span class="comma">, </span><!-- and so on --></p>
+<p>
+    <strong>Tags!</strong>
+    <span class="tag">My tag</span><span class="comma">, </span>
+    <span class="tag">Some other tag</span><span class="comma">, </span>
+    <!-- and so on -->
+</p>
 ```
 
 ```css
