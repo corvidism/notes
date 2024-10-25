@@ -12,16 +12,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "chokidar": "^3.6.0",
     "glob": "^11.0.0",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.0",
+    "markdown-it-prism": "^2.3.0",
     "nunjucks": "^3.2.4",
     "rss": "^1.2.2",
     "serve": "^14.2.3"
-  },
-  "dependencies": {
-    "chokidar": "^3.6.0",
-    "execa": "^9.4.1",
-    "markdown-it-prism": "^2.3.0"
   }
 }
