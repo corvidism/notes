@@ -3,7 +3,6 @@ import markdownit from 'markdown-it';
 import prism from 'markdown-it-prism';
 import { default as matter } from 'gray-matter';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import { config } from './config.mjs';
 
 const contentDir = path.join(config.rootDir, config.contentDir);
