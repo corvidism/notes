@@ -3,10 +3,10 @@ import markdownit from 'markdown-it';
 import prism from 'markdown-it-prism';
 import { default as matter } from 'gray-matter';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { config } from './config.mjs';
 
-// get all pages to generate
-
-// render markdown to object (slug, data, content)
+const contentDir = path.join(config.rootDir, config.contentDir);
 
 function getSlug(fullpath) {
     const relativeFilename = fullpath.replace(contentDir, '');
@@ -15,8 +15,12 @@ function getSlug(fullpath) {
 }
 
 export function getPages() {
-    const contentDir = path.join(process.cwd(), './src/content');
     const pageFiles = globSync(path.join(contentDir, '**/*.md'), { withFileTypes: true });
+
+
+    console.log(`Found pages in ${contentDir}:`);
+    console.log(pageFiles.map(f => `  * ${f.name}`).join('\n'));
+    console.log('\n')
 
     return pageFiles;
 }
