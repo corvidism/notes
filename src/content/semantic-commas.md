@@ -1,8 +1,8 @@
 ---
 title: Semantic commas
+date: 2024-08-08
 ---
-# Semantic commas
-2024/08/08
+
 
 **Problem:** I come to a page with a styled inline list of items - tags, bookmarks, whatever - and I need to copy them. I do my `Ctr+C` and `Ctrl+V` and I get this:
 

@@ -1,8 +1,9 @@
 ---
 title: Anna's notes
-subtitle: You don't need Medium.com when you know HTML
 template: home
 ---
+
+*You don't need Medium.com when you know HTML*
 
 ## Notes
 

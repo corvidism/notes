@@ -1,5 +1,9 @@
 # My notes
 
+## How to run
+
+* `npm run dev` - builds static files and starts a server
+
 Why:
 
 * I want to put some words online.
