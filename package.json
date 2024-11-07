@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./build.mjs",
+    "build": "node ./build/build.mjs",
+    "build:clean": "rm -rf dist; npm run build",
     "start": "serve dist -p 3456",
     "dev": "npm run build; npm run start"
   },
@@ -15,9 +16,11 @@
     "chokidar": "^3.6.0",
     "glob": "^11.0.0",
     "gray-matter": "^4.0.3",
+    "highlight.js": "^11.10.0",
     "markdown-it": "^14.1.0",
     "markdown-it-prism": "^2.3.0",
     "nunjucks": "^3.2.4",
+    "rimraf": "^6.0.1",
     "rss": "^1.2.2",
     "serve": "^14.2.3"
   }
